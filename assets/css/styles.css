@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    outline: none;
+    padding: 0px
+}
+
+body,
+input,
+button,
+textarea {
+    pointer-events: all;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+ul {
+    list-style: inside
+}
+
+img {
+    border: none
+}
+
+section {
+    overflow: hidden;
+}
+
+article {
+    margin: 0 auto;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 62rem;
+    padding: 0px 1rem;
+    width: 100%
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 0.0625rem solid rgba(68, 68, 68, 0.25);
+    height: 3.5rem;
+    left: 0;
+    padding: 0.75rem 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
+
+.navbar .container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between
+}
+
+.navbar .navbar-brand {
+    align-items: center;
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    text-transform: uppercase
+}
+
+.navbar .navbar-brand img {
+    display: block;
+    height: 2rem;
+    margin: 0
+}
+
+.navbar .navlinks {
+    display: none;
+    color: #006b7e;
+    font-size: 1rem;
+    font-weight: 400;
+    flex-basis: 100%;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.navbar .navlinks li {
+    font-weight: 500;
+    display: flex;
+    justify-content: center
+}
+
+.navbar .navlinks li a {
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+}
+
+.linha {
+    background-color: rgb(0, 111, 131);
+    border-radius: 999px;
+    height: 0.25rem;
+    width: 1.875rem
+}
+
+.linha:nth-child(2) {
+    margin: 0.25rem 0px
+}
+
+.resumo {
+    background: rgb(0, 111, 131);
+    background: linear-gradient(0deg, rgba(0, 111, 131, 1) 0%, rgba(0, 216, 255, 1) 100%);
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: 600;
+    min-height: calc(100vh - 3.5rem);
+    position: relative;
+    text-align: center;
+}
+
+.resumo .resumo-foto-bg {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 113%;
+    z-index: -1
+}
+
+.resumo ul {
+    color: #fff;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.resumo ul h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.resumo ul p {
+    text-align: justify;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.habilidades {
+    margin-top: 5px;
+    background: #fff;
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+}
+
+.habilidades .grupo-containers-habilidade {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.habilidades .grupo-containers-habilidade li {
+    padding-top: 16px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.habilidades .container-habilidade {
+    background: rgba(27, 173, 199, .85);
+    height: 400px;
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+    text-align: center;
+}
+
+.habilidades .container-habilidade dl {
+    padding-top: 70px;
+    color: #fff;
+}
+
+.habilidades .container-habilidade dl dt {
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.habilidades .container-habilidade dl dd {
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.experiencia {
+    background: rgb(87, 87, 87);
+    background: linear-gradient(0deg, rgba(87, 87, 87, 1) 0%, rgba(69, 69, 69, 1) 100%);
+    color: #fff;
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: 600;
+    min-height: 110vh;
+    position: relative;
+    text-align: center;
+}
+
+.experiencia ul {
+    list-style: none;
+    color: #fff;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.experiencia ul h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.experiencia ul p {
+    text-align: justify;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.experiencia .experiencia-foto-bg {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 113%;
+    z-index: -1
+}
+
+.educacao {
+    background: white;
+    color: #006b7e;
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: 600;
+    min-height: 110vh;
+    position: relative;
+    text-align: center;
+}
+
+.educacao ul {
+    list-style: none;
+    color: #011;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.educacao ul h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 170px;
+}
+
+.educacao ul p {
+    text-align: justify;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.educacao .educacao-foto-bg {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 113%;
+    z-index: -1
+}
+
+.footer {
+    background: none;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(4, 125, 146, 0.945) 0%, rgba(27, 173, 199, 1) 100%);
+}
+
+.footer .container {
+    padding: 2rem
+}
+
+.footer .footer-redes-sociais {
+    display: flex;
+    list-style: none;
+    justify-content: center
+}
+
+.footer .footer-redes-sociais li a {
+    align-items: center;
+    background-color: #d2d2d2;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    margin: 1rem;
+    width: 5rem;
+    transition: background-color 0.2s linear
+}
+
+.footer .footer-redes-sociais li a svg {
+    color: #006b7e;
+    height: 1.875rem;
+    transition: transform 0.2s linear;
+    width: 1.875rem;
+}
+
+.footer .footer-redes-sociais li a:hover {
+    background-color: #fff;
+}
+
+.footer .footer-redes-sociais li a:hover svg {
+    transform: scale(1.375);
+}
+
+.footer .footer-copyright {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 1rem;
+    text-align: center
+}
+
+@media (min-width: 992px) {
+    .resumo {
+        background: rgb(0, 111, 131);
+        background: linear-gradient(0deg, rgba(0, 111, 131, .9) 0%, rgba(0, 216, 255, .6) 100%);
+    }
+    .resumo ul h1 {
+        margin-top: 150px;
+    }
+    .resumo .resumo-foto-bg {
+        position: absolute;
+        display: block;
+        top: 0;
+        z-index: -1;
+        width: 105%;
+    }
+    .experiencia {
+        background: rgb(87, 87, 87);
+        background: linear-gradient(0deg, rgba(87, 87, 87, .9) 0%, rgba(69, 69, 69, .6) 100%);
+    }
+    .experiencia .experiencia-foto-bg {
+        filter: blur(5px);
+        position: absolute;
+        display: block;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+    }
+    .educacao {
+        background: rgb(255, 255, 255, 0.6);
+    }
+    .educacao .educacao-foto-bg {
+        filter: blur(5px);
+        position: absolute;
+        display: block;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar .navlinks li a {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        margin: 0;
+        padding: 0px 0.75rem;
+        transition: background-color 0.2s linear, color 0.2s linear
+    }
+    .navbar .navlinks li a:hover {
+        color: #00d8ff
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar .navlinks li a {
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .navbar.active {
+        height: auto
+    }
+    .navbar.active .navlinks {
+        display: block
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar .navlinks {
+        display: flex !important;
+        flex-basis: auto
+    }
+    .menu {
+        display: none !important
+    }
+    .habilidades .container-habilidade {
+        width: 99%;
+    }
+    .habilidades .grupo-containers-habilidade li {
+        padding-top: 16px;
+        margin: 0 auto;
+        width: 30%;
+    }
+    .footer .footer-redes-sociais li a {
+        height: 6.25rem;
+        width: 6.25rem
+    }
+    .footer .footer-redes-sociais li a svg {
+        height: 2.5rem;
+        width: 2.5rem
+    }
+}
+
+@media (max-width: 574px) {
+    .habilidades .grupo-containers-habilidade li {
+        width: 100%;
+    }
+}
